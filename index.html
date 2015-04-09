@@ -31,6 +31,10 @@
         element.innerHTML = 'Latitude: '  + position.coords.latitude      + '<br />' +
                             'Longitude: ' + position.coords.longitude     + '<br />' +
                             '<hr />'      + element.innerHTML;
+        document.all.myGeoLong.value =  position.coords.longitude                       
+        document.all.myGeoLat.value =  position.coords.latitude                                 
+        document.all.mySendNow.click()                    
+                            
     }
 
         // onError Callback receives a PositionError object
@@ -171,10 +175,10 @@ function getFormValues(fobj){
 
 Type in the boxes to activate AJAX
 <input type="text" name="myNamePost" size="20" value=fred onKeyUp="">
-<textarea name="myXPost"                    onKeyUp=""></textarea>
-<input type=text name="myYPost" value="777" onKeyUp="">
+<textarea name="myXPost"   id="myGeoLong"                 onKeyUp=""></textarea>
+<input type=text name="myYPost" id="myGeoLat"    value="777" onKeyUp="">
 
-<Input type=button value=send onclick="{myAjax(this.form, 'https://demo-project-php-jerteach.c9.io/t4a8update3.php', 'myDiv1')}">
+<Input id="mySendNow" type=button value=send onclick="{myAjax(this.form, 'https://demo-project-php-jerteach.c9.io/t4a8update3.php', 'myDiv1')}">
 </form>
 
 
