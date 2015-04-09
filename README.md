@@ -2,6 +2,9 @@
 Using phonegap geolocation to update a database so a robot can follow your cell phone
 
 
+Edited April 8th, 2015
+
+Added some AJAX and PHP files from old projects to get started.
 
 Started on April 7th, 2015
 
@@ -21,6 +24,3 @@ Note: This should be able to be built at https://build.phonegap.com/people/sign_
 
 
 
-Edited April 8th, 2015
-
-Added some AJAX and PHP files from old projects to get started.
