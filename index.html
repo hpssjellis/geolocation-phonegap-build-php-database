@@ -25,9 +25,14 @@
     //
     function onSuccess(position) {
         var element = document.getElementById('myGeolocation');
+        
+        document.all.myGeoLat.value = position.coords.latitude 
+        document.all.myGeoLong.value = position.coords.longitude
+        document.all.mySendNow.click()
+        
         element.innerHTML = 'Latitude: '  + position.coords.latitude      + '<br />' +
                             'Longitude: ' + position.coords.longitude     + '<br />' +
-                            '<hr />'      + element.innerHTML;
+                            '<hr />';
     }
 
         // onError Callback receives a PositionError object
