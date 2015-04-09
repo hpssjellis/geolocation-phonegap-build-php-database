@@ -1,3 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -110,9 +121,12 @@ function getFormValues(fobj){
 <form id="myForm">
 
 Type in the boxes to activate AJAX
-<input type="text" name="myName" size="20" onKeyUp="{myAjax(this.form, 'http://www.yourURL.com/yourFolder/ajax.php', 'myDiv1')}">
-<textarea name="myArea"                    onKeyUp="{myAjax(this.form, 'http://www.yourURL.com/yourFolder/ajax.php', 'myDiv1')}"></textarea>
-<input type=text name="myOther" value=what onKeyUp="{myAjax(this.form, 'http://www.yourURL.com/yourFolder/ajax.php', 'myDiv1')}">
+<input type="text" name="myNamePost" size="20" value=fred onKeyUp="">
+<textarea name="myXPost"                    onKeyUp=""></textarea>
+<input type=text name="myYPost" value="777" onKeyUp="">
+
+<Input type=button value=send onclick="{myAjax(this.form, 'https://demo-project-php-jerteach.c9.io/t4a8update3.php', 'myDiv1')}">
+</form>
 
 
 <div id="myDiv1" style="color: blue;"></div>
