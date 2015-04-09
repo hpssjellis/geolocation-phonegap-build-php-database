@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-
-    <title>geolocation-phonegap-build-php-database</title>
+      <script type="text/javascript" src="../phonegap.js"></script>
+    <title>pgb-helloworld-geolocation</title>
 
 
     <script type="text/javascript" charset="utf-8">
@@ -31,10 +28,6 @@
         element.innerHTML = 'Latitude: '  + position.coords.latitude      + '<br />' +
                             'Longitude: ' + position.coords.longitude     + '<br />' +
                             '<hr />'      + element.innerHTML;
-        document.all.myGeoLong.value =  position.coords.longitude                       
-        document.all.myGeoLat.value =  position.coords.latitude                                 
-        document.all.mySendNow.click()                    
-                            
     }
 
         // onError Callback receives a PositionError object
@@ -45,28 +38,8 @@
         }
 
     </script>
-  </head>
-  <body>
-    <p id="myGeolocation">Watching geolocation...</p>
     
     
-    
-    
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
 <script type="text/javascript">
 <!--
 
@@ -160,15 +133,17 @@ function getFormValues(fobj){
 }
 
 //--></script>
-
-
-
-
-
-
-</head>
-
-<body onload="document.all.myForm.myName.select()">
+    
+    
+    
+    
+    
+    
+    
+    
+  </head>
+  <body>
+    <p id="myGeolocation">Watching geolocation...</p>
 
 
 <form id="myForm">
@@ -185,16 +160,6 @@ Type in the boxes to activate AJAX
 <div id="myDiv1" style="color: blue;"></div>
 
 
-
-
-
-
-
-
-
-
-
-
 <br>At the bottom of every page make sure you include the following button:<br>
 
 <input type=button value="Back" style="font-size:25px" onclick="{window.history.back()}"><br><br>
@@ -202,41 +167,5 @@ Type in the boxes to activate AJAX
 
 
 
-
-
-</body>
-</html>
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
   </body>
 </html>
